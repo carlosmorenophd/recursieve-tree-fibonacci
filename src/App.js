@@ -25,13 +25,8 @@ function App() {
     },
     schema: schema,
     onSubmit: (values) => {
-      const f = fibonacci(values.n);
-      console.log("Log:", process.env.NODE_ENV);
-      // console.info("Tree:", treeFibonacci);
-      setResult(f);
-      const treeDrawing = getTree();
-      // console.log(treeDrawing);
-      setTree(treeDrawing)
+      setResult(fibonacci(values.n));
+      setTree(getTree())
     },
   });
 

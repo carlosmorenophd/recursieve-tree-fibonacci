@@ -69,11 +69,13 @@ const useFibonacci = () => {
       finishAllNodes--;
 
       // Panic button to prevent infinite loop only on dev mode
-      if (panicButton > 100) {
-        console.warn("Panic button activate");
-        continueTree = false;
-      } else {
-        panicButton++;
+      if( process.env.NODE_ENV === "development"){
+        if (panicButton > 100) {
+          console.warn("Panic button activate");
+          continueTree = false;
+        } else {
+          panicButton++;
+        }
       }
     }
     return dataTreeFibonacci.export((data) => {
