@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Programa para calcular la Serie Fibonacci con árbol de ejecución  (Español)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduccion
 
-## Available Scripts
+El presente programa busca resolver la serie Fibonacci mediante programación recursiva obteniendo el resultado de esta y dibujando un árbol de la ejecución de este algoritmo.
 
-In the project directory, you can run:
+## Serie Fibonacci
 
-### `npm start`
+La serie de Fibonacci es una secuencia matemática infinita de números en la cual cada número es la suma de los dos anteriores. La secuencia comienza generalmente con los números $0 y 1$.
+La secuencia de Fibonacci se define de la siguiente manera:
+$$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...$$
+Los primeros dos números de la secuencia son $0 y 1$. A partir de ahí, cada número subsiguiente se obtiene sumando los dos números anteriores. Por ejemplo, el tercer número es $0 + 1 = 1$, el cuarto número es $1 + 1 = 2$, el quinto número es $1 + 2 = 3$, y así sucesivamente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La secuencia de Fibonacci tiene muchas propiedades interesantes y se encuentra en varios contextos en matemáticas, ciencias naturales y programación. Se utiliza ampliamente como un ejemplo de recursión y se puede encontrar en fenómenos naturales, como el crecimiento de las plantas, la forma de las conchas de caracol y la distribución de pétalos en flores.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sobre el autor
 
-### `npm test`
+Leonardo de Pisa, también conocido como Leonardo Fibonacci, fue un matemático italiano nacido alrededor del año 1170 en Pisa, Italia, y fallecido después de 1240. Es conocido principalmente por su obra "Liber Abaci", en la que introdujo y popularizó en Europa los números arábigos y el sistema decimal posicional.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Leonardo Fibonacci viajó extensamente por el Mediterráneo y estudió matemáticas en varias escuelas árabes. Durante sus viajes, adquirió conocimientos sobre los sistemas numéricos y las técnicas matemáticas utilizadas en el mundo árabe, que eran más avanzados que los métodos romanos que se utilizaban en Europa en ese momento.
 
-### `npm run build`
+En su libro "Liber Abaci", Fibonacci presentó y promovió el uso de los números arábigos, incluyendo el cero, así como el sistema decimal posicional. Estos conceptos tuvieron un impacto significativo en la aritmética y la práctica comercial de la época, y ayudaron a popularizar el sistema numérico que utilizamos actualmente.
+Además de su contribución al sistema numérico, Fibonacci también introdujo la secuencia de Fibonacci en "Liber Abaci". Aunque la secuencia no fue descubierta por él, Fibonacci la presentó como un ejemplo en un problema sobre el crecimiento de una población de conejos y, posteriormente, se convirtió en uno de los conceptos matemáticos más conocidos y estudiados.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Leonardo de Pisa dejó un legado importante en el campo de las matemáticas, particularmente en el ámbito de los sistemas numéricos y la secuencia de Fibonacci. Su trabajo fue fundamental para la difusión de las matemáticas árabes en Europa y tuvo un impacto duradero en el desarrollo de las matemáticas y la ciencia en general.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Ejemplo del árbol de ejecuccion
+![Ejemplo arbol de ejecucion](asserts/fibbonaci.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Program to calculate the Fibonacci Series with execution tree (english)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Introduccion
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El presente programa busca resolver la serie Fibonacci mediante programación recursiva obteniendo el resultado de esta y dibujando un árbol de la ejecución de este algoritmo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Serie Fibonacci
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+La serie de Fibonacci es una secuencia matemática infinita de números en la cual cada número es la suma de los dos anteriores. La secuencia comienza generalmente con los números $0 y 1$.
+La secuencia de Fibonacci se define de la siguiente manera:
+$$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...$$
+Los primeros dos números de la secuencia son $0 y 1$. A partir de ahí, cada número subsiguiente se obtiene sumando los dos números anteriores. Por ejemplo, el tercer número es $0 + 1 = 1$, el cuarto número es $1 + 1 = 2$, el quinto número es $1 + 2 = 3$, y así sucesivamente.
 
-## Learn More
+La secuencia de Fibonacci tiene muchas propiedades interesantes y se encuentra en varios contextos en matemáticas, ciencias naturales y programación. Se utiliza ampliamente como un ejemplo de recursión y se puede encontrar en fenómenos naturales, como el crecimiento de las plantas, la forma de las conchas de caracol y la distribución de pétalos en flores.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Sobre el autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Leonardo de Pisa, también conocido como Leonardo Fibonacci, fue un matemático italiano nacido alrededor del año 1170 en Pisa, Italia, y fallecido después de 1240. Es conocido principalmente por su obra "Liber Abaci", en la que introdujo y popularizó en Europa los números arábigos y el sistema decimal posicional.
 
-### Code Splitting
+Leonardo Fibonacci viajó extensamente por el Mediterráneo y estudió matemáticas en varias escuelas árabes. Durante sus viajes, adquirió conocimientos sobre los sistemas numéricos y las técnicas matemáticas utilizadas en el mundo árabe, que eran más avanzados que los métodos romanos que se utilizaban en Europa en ese momento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+En su libro "Liber Abaci", Fibonacci presentó y promovió el uso de los números arábigos, incluyendo el cero, así como el sistema decimal posicional. Estos conceptos tuvieron un impacto significativo en la aritmética y la práctica comercial de la época, y ayudaron a popularizar el sistema numérico que utilizamos actualmente.
+Además de su contribución al sistema numérico, Fibonacci también introdujo la secuencia de Fibonacci en "Liber Abaci". Aunque la secuencia no fue descubierta por él, Fibonacci la presentó como un ejemplo en un problema sobre el crecimiento de una población de conejos y, posteriormente, se convirtió en uno de los conceptos matemáticos más conocidos y estudiados.
 
-### Analyzing the Bundle Size
+Leonardo de Pisa dejó un legado importante en el campo de las matemáticas, particularmente en el ámbito de los sistemas numéricos y la secuencia de Fibonacci. Su trabajo fue fundamental para la difusión de las matemáticas árabes en Europa y tuvo un impacto duradero en el desarrollo de las matemáticas y la ciencia en general.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Ejemplo del árbol de ejecuccion
+![Ejemplo arbol de ejecucion](asserts/fibbonaci.png)
