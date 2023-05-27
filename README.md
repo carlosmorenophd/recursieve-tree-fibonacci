@@ -55,3 +55,12 @@ In addition to his contribution to the number system, Fibonacci also introduced 
 Leonardo de Pisa left an important legacy in the field of mathematics, particularly in the field of number systems and the Fibonacci sequence. His work was instrumental in the spread of Arabic mathematics in Europe and had a lasting impact on the development of mathematics and science in general.
 ## Ejemplo del árbol de ejecuccion
 ![Ejemplo arbol de ejecucion](asserts/fibbonaci.png)
+
+
+
+# Acerca del autor / About the author
+
+* Estuandite de Doctorado: Juan Carlos Moreno Sanchez 
+* carlos.moreno.phd@gmail.com
+* jcmorenos@alumno.uaemex.mx
+
