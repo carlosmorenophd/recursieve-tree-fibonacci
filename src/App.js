@@ -9,11 +9,11 @@ const schema = Yup.object().shape({
   n: Yup.number().min(2, "Min number of calculate").required("Required"),
 });
 function App() {
-  const { fibonacci, treeFibonacci, parent } = useFibonacci();
+  const { fibonacci, getTree } = useFibonacci();
   const [tree, setTree] = useState({
-    name: "F",
+    name: "N",
     attributes: {
-      actual: "0",
+      tag: "Parent - N",
     },
     children: [],
   });
@@ -25,10 +25,8 @@ function App() {
     },
     schema: schema,
     onSubmit: (values) => {
-      const f = fibonacci(values.n, parent);
-      console.log("Log:", f);
-      console.info("Tree:", treeFibonacci);
-      setResult(f);
+      setResult(fibonacci(values.n));
+      setTree(getTree())
     },
   });
 

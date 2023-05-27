@@ -1,31 +1,94 @@
+import dataTree from "data-tree";
 import { uid } from "uid";
 
 const useFibonacci = () => {
   let treeFibonacci = [];
   const parent = uid();
+  let N;
 
-  function fibonacci(n, parent) {
-    const tree = { parent, n, id: uid() };
+  const fibonacci = (n) => {
+    N = n;
+    return fibonacciImplementation({ n, parentId: parent });
+  }
+
+  const fibonacciImplementation = ({ n, parentId }) => {
+    const tree = { parent: parentId, n, id: uid() };
     treeFibonacci.push(tree);
     if (n <= 1) {
       return n;
     } else {
-      return fibonacci(n - 1, tree.id) + fibonacci(n - 2, tree.id);
+      return (
+        fibonacciImplementation({ n: n - 1, parentId: tree.id }) +
+        fibonacciImplementation({ n: n - 2, parentId: tree.id })
+      );
     }
   }
 
   const getTree = () => {
-    const ids = [...new Set(treeFibonacci.map((t) => t.parent))].filter(f=> f !== parent);
-    let nowParent = parent;
-    ids.forEach(id => {
-      
-    });
+    if (treeFibonacci.length > 0){
+      return getTreeImplementation();
+    }else{
+      throw new Error('The fibonacci function must be called before getTree function!');
+    }
+  };
 
+  const getTreeImplementation = () => {
+    let nowParent = parent;
+    let continueTree = true;
+    let panicButton = 0;
+    let dataTreeFibonacci = dataTree.create();
+    let finishAllNodes = 1;
+    let parentCollectors = [];
+    const nOfFibonacci = N;
+    while (continueTree) {
+      const nowParentConst = nowParent;
+      const children = treeFibonacci.filter((t) => t.parent === nowParentConst);
+      children.forEach((child) => {
+        parentCollectors.push(child.id);
+        if (child.n === nOfFibonacci) {
+          dataTreeFibonacci.insert({
+            key: child.id,
+            values: {
+              n: child.n,
+              type: "Parent",
+            },
+          });
+        } else {
+          dataTreeFibonacci.insertTo((data) => data.key === nowParentConst, {
+            key: child.id,
+            values: {
+              n: child.n,
+              type: "Child",
+            },
+          });
+        }
+      });
+      finishAllNodes = finishAllNodes + children.length;
+      nowParent = parentCollectors.pop();
+      if (finishAllNodes === 0) continueTree = false;
+      finishAllNodes--;
+
+      // Panic button to prevent infinite loop only on dev mode
+      if( process.env.NODE_ENV === "development"){
+        if (panicButton > 100) {
+          console.warn("Panic button activate");
+          continueTree = false;
+        } else {
+          panicButton++;
+        }
+      }
+    }
+    return dataTreeFibonacci.export((data) => {
+      return {
+        name: `${data.values.n}`,
+        attributes: {
+          tag: `${data.values.type} - ${data.values.n}`,
+        },
+      };
+    });
   };
 
   return {
-    parent,
-    treeFibonacci,
     fibonacci,
     getTree,
   };
